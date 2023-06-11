@@ -1,6 +1,7 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Peliculas.Entities;
+using Peliculas.Seeding;
 
 namespace Peliculas
 {
@@ -30,6 +31,9 @@ namespace Peliculas
 
             //Importando las configuraciones de las entidades
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            //Agregando informacion mediante seeding
+            SeedingModuloConsulta.Seed(modelBuilder);
 
             //Declarando clave primaria desde el ApiFluente
             // modelBuilder.Entity<Genero>().HasKey(prop => prop.NombreDiferente);

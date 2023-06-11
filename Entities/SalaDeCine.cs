@@ -21,6 +21,6 @@ namespace Peliculas.Entities
         public int CineId { get; set; }
         public Cine Cine { get; set; }
 
-        public HashSet<Pelicula> Pelculas { get; set; }
+        public HashSet<Pelicula> Peliculas { get; set; }
     }
 }

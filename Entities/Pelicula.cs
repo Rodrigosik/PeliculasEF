@@ -20,7 +20,7 @@ namespace Peliculas.Entities
         //Agregando el atributo Unicode
         [Unicode(false)]
         //Tambien se puede hacer desde el api fluente
-        public string PostURL { get; set; }
+        public string PosterURL { get; set; }
         public HashSet<Genero> Generos { get; set; }
         public HashSet<SalaDeCine> SalasDeCine { get; set; }
         public HashSet<PeliculaActor> PeliculasActores { get; set; }
